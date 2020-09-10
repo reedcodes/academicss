@@ -1,0 +1,39 @@
+@media print {
+    
+    @page {
+        size: auto;
+        margin: 1in;
+        background: none;
+    }
+    
+    html {
+        font-size: 12pt;
+    }
+    
+    article {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+    
+    #main {
+        p {
+            text-indent: 0.5in;
+        }
+    }
+    
+    table, figure {
+        page-break-inside: avoid;
+    }
+    
+    footer {
+        section {
+            page-break-before: always;
+        }
+    }
+    
+}
